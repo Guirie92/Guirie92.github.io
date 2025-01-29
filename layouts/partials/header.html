@@ -1,0 +1,60 @@
+<!-- Navigation-->
+<meta charset="UTF-8">
+
+<link rel="icon" href="{{ site.Params.favicon }}" /> <!-- delete? -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <!--<a class="navbar-brand" href="/#page-top"><img src="{{ .Site.Params.logo }}"></a>-->
+        <!--<a class="navbar-brand" href="/#page-top" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase; color: #fff; font-weight: 100; letter-spacing: 0rem; transform: scaleY(1.35)">GUILLERMO SANCHEZ DE MOLINA H.<img src=""></a>-->
+        <!--<a class="navbar-brand" href="/#page-top" style="font-family: 'proxima-nova-condensed', sans-serif; text-transform: uppercase; color: #fff; font-weight: 100; letter-spacing: 0rem;">GUILLERMO SANCHEZ DE MOLINA H.<img src=""></a>-->
+        <a class="navbar-brand" href="/#page-top" style="font-family: 'proxima-nova-condensed', sans-serif; text-transform: uppercase; color: #fff; font-weight: 100; letter-spacing: 0rem;">
+            GUILLE SANCHEZ dM. H.<img src="">
+        </a>
+
+        <!--<button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>-->
+
+        <div data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="header-burger d-lg-none absolute z-50 ml-2">
+            <button id="primary-nav-burger-toggle" type="button" aria-controls="primary-nav-mobile" aria-expanded="false" class="burger burger-button relative z-50 block h-12 px-3 bg-transparent rounded-none cursor-pointer transition-color duration-200 lg:hidden">
+                <span class="sr-only"></span>
+                <span class="block w-full h-full transform">
+                    <span class="burgerMenu-bar burgerMenu-1"></span>
+                    <span class="burgerMenu-bar burgerMenu-2"></span>
+                    <span class="burgerMenu-bar burgerMenu-3"></span>
+                </span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                {{ range site.Menus.main }}
+                <li class="nav-item"><a class="nav-link" href="{{ .URL }}" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase">{{ .Name }}</a></li>
+                {{ end }}
+                {{ range site.Menus.secondary }}
+                <!--<li class="nav-item">
+                    <div id="mainNav-resume">-->
+                <!--<a class="nav-link" href="{{ .URL }}" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase; margin-top: -20px;">Resume</a>-->
+                <!--</div>-->
+                <!--<a class="nav-link" href="{{ .URL }}" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase;">R&eacutesum&eacute</a>-->
+                <!--<a class="nav-link" href="{{ .URL }}" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase;">Resume</a>
+                </li>-->
+
+                <li class="nav-item">
+                    <!--<a class="nav-link" href="{{ .URL }}" target="_blank" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase;">-->
+                    <a class="nav-link" href="{{ $.Site.Params.resumeURL }}" target="_blank" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase;">
+                        Resume
+                        <div id="mainNav-resume"></div>
+                    </a>
+                    <!--<a class="nav-link resume-hover" href="{{ .URL }}"  target="_blank" style="font-family: 'dinosaur', sans-serif; text-transform: uppercase;">
+                        Resume
+                        <div id="mainNav-resume"></div>
+                    </a>-->
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,78 @@
+pre[class*=language-].line-numbers {
+    position: relative;
+    /* (original 3.8em) 10-99 -> 2.7em  |  1-9 -> 2.2em (0.5em steps) */
+    /*padding-left: 3.8em;*/
+    /*padding-left: 2.2em;*/
+    /*--base-padding: 2.2em;*/ /* Base padding for single-digit numbers */
+    /*--digit-width: 0.5em;*/ /* Additional padding per digit */
+    /*padding-left: calc(var(--base-padding) + (var(--line-number-digits) - 1) * var(--digit-width));*/
+
+    /*padding-left: var(--line-number-padding-left, 2.2em);*/
+    /*padding-left: var(--line-number-padding-left, 2.2em);*/
+    padding-left: var(--line-number-padding-left, 4em);
+}
+
+    pre[class*=language-].line-numbers > code {
+        position: relative;
+        white-space: inherit
+    }
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    font-size: 100%;
+
+
+    width: 81px;
+    margin-left: -85px;
+
+
+    letter-spacing: -1px;
+    /*border-right: 1px solid #999;*/
+    border-right: 1px solid #454545;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+/*.line-numbers .line-numbers-rows {*/
+/*    position: absolute;*/
+/*    pointer-events: none;*/
+/*    top: 0;*/
+/*    font-size: 100%;*/
+
+/*    left: -3.8em;*/
+
+/*    !*width: 3em;*!*/
+/*    width: 48px;*/
+/*    */
+/*    */
+/*    letter-spacing: -1px;*/
+/*    !*border-right: 1px solid #999;*!*/
+/*    border-right: 1px solid #454545;*/
+/*    -webkit-user-select: none;*/
+/*    -moz-user-select: none;*/
+/*    -ms-user-select: none;*/
+/*    user-select: none*/
+/*}*/
+
+.line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+    /*padding-right: 10px;*/
+    /*padding-right: 20px;*/
+    /*padding-right: 15px;*/
+
+}
+
+    .line-numbers-rows > span:before {
+        content: counter(linenumber);
+        color: #999;
+        display: block;
+        /*padding-right: .8em;*/
+        text-align: right;
+        margin-right: 35px;
+    }
+

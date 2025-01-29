@@ -1,0 +1,33 @@
+# Hugo output directory (generated static files)
+public/
+
+# Distribution build files
+dist/
+
+# Hugo caching and temp files
+resources/
+hugo_stats.json
+
+# Test and import files
+*.test
+imports.*
+
+# Logs and temp files
+.DS_Store
+Thumbs.db
+*.log
+
+# Node.js dependencies (if using npm/yarn)
+node_modules/
+
+# Build artifacts
+*.bak
+*.swp
+
+# GitHub Pages-specific ignores
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
