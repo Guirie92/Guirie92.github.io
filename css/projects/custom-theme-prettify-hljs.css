@@ -1,0 +1,135 @@
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    font-size: 13.5px !important;
+    /*font-family: "JetBrains Mono", Menlo, monospace;*/
+
+    font-family: Menlo, monospace;
+    white-space: pre; /* Prevent wrapping of code lines */
+    overflow-x: auto; /* Add horizontal scroll when content overflows */
+}
+
+code.hljs {
+    padding: 3px 5px
+}
+
+.hljs {
+    color: #abb2bf;
+    background: #282c34
+}
+
+/* Target the table created by the line numbers plugin */
+.hljs-ln {
+    border-collapse: collapse; /* Prevent spacing issues */
+    font-size: 13.5px !important; /* Apply consistent font size */
+    font-family: inherit; /* Ensure font family */
+    line-height: 1.5; /* Match the code's line height */
+}
+
+    /* Target individual table cells (line numbers and code content) */
+    .hljs-ln td {
+        /*padding: 0 !important;*/ /* Remove any padding */
+        /*margin: 0 !important;*/ /* Remove any margin */
+        padding: inherit; /* Remove any padding */
+        margin: inherit; /* Remove any margin */
+        font-size: inherit; /* Inherit from the .hljs-ln class */
+        font-family: inherit; /* Inherit font family */
+        line-height: inherit; /* Match line height */
+
+        justify-content: right;
+        padding-right: 10px;
+    }
+
+/* Ensure the code block itself uses the desired font size */
+pre code.hljs {
+    font-size: 13.5px !important; /* Main code font size */
+    font-family: "JetBrains Mono", Menlo, monospace !important; /* Consistent font family */
+    line-height: 1.5; /* Match line height */
+}
+
+.hljs-pre {
+    display: block; /* Ensures block-level formatting */
+    padding: 0; /* Remove Bootstrap padding */
+    margin: 0; /* Remove Bootstrap margin */
+    font-size: 1rem; /* Set a consistent font size */
+    line-height: 1.5; /* Match Highlight.js line height */
+    color: inherit; /* Use Highlight.js color scheme */
+    word-break: normal; /* Prevent breaking code in weird places */
+    word-wrap: normal; /* Ensure code stays within bounds */
+    /*background-color: transparent;*/ /* Use Highlight.js background */
+    border: none; /* Remove Bootstrap borders */
+    border-radius: 0; /* Neutralize Bootstrap border-radius */
+    overflow: auto; /* Ensure scrollbars for long lines */
+
+    border: .01245rem solid rgba(255,255,255,.15) !important;
+    border-radius: 16px;
+    font-size: 14px;
+
+
+    display: inline-block;
+    vertical-align: top;
+    padding: .1875rem .5rem;
+    border-radius: 4px;
+    background-color: #1d1f21;
+    font-size: .75rem;
+    line-height: 1;
+
+}
+
+
+.hljs-line-numbers .hljs-line-number {
+    display: inline-block; /* Ensure numbers are on one line */
+    width: 2.5em; /* Fixed width for consistent alignment */
+    padding-right: 5px; /* Space between numbers and code */
+    text-align: right; /* Align numbers to the right */
+    vertical-align: top; /* Align with the code */
+    line-height: 1.5; /* Match the code's line-height */
+    color: #666; /* Grey color for numbers */
+    user-select: none; /* Prevent numbers from being selected */
+}
+
+.hljs-comment, .hljs-quote {
+    color: #5c6370;
+    font-style: italic
+}
+
+.hljs-doctag, .hljs-formula, .hljs-keyword {
+    color: #c678dd
+}
+
+.hljs-deletion, .hljs-name, .hljs-section, .hljs-selector-tag, .hljs-subst {
+    color: #e06c75
+}
+
+.hljs-literal {
+    color: #56b6c2
+}
+
+.hljs-addition, .hljs-attribute, .hljs-meta .hljs-string, .hljs-regexp, .hljs-string {
+    color: #98c379
+}
+
+.hljs-attr, .hljs-number, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-pseudo, .hljs-template-variable, .hljs-type, .hljs-variable {
+    color: #d19a66
+}
+
+.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hljs-title {
+    color: #61aeee
+}
+
+    .hljs-built_in, .hljs-class .hljs-title, .hljs-title.class_ {
+        color: #e6c07b
+    }
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: 700
+}
+
+.hljs-link {
+    text-decoration: underline
+}
