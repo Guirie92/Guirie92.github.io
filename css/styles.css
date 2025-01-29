@@ -12628,7 +12628,7 @@ body.riotbar-present * {
     margin: -23px 0 0 -96px;
     left: 50%;
     transform: translateX(-50%) scale(0.8);
-    background: url('../images/demo-available-image-baked.png') no-repeat;
+    background: url('../images/demo-available-image-baked4.png') no-repeat;
     background-position: center center; /* Centers both horizontally and vertically */
     width: 162px;
     height: 48px; /* 48 original size*/
